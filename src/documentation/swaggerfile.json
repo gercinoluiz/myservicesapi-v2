@@ -1,0 +1,1628 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "APPSEME",
+        "version": "1.0.0.",
+        "description": "An andpoint for getting information about Application Meu Lazer",
+        "contact": {
+            "email": "gercino.neto.luiz@gmail.com.com"
+        }
+    },
+    "paths": {
+        "/locations": {
+            "summary": "Indica os equipamentos de esportes",
+            "description": "Todos os equipamentos de esportes\n",
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "quantity",
+                        "description": "quantidade de localidades retornadas",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "Response": {
+                                        "value": {
+                                            "message": "success",
+                                            "data": [
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.7827734639709,
+                                                            -23.7889943921627
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04870 020",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "ES DO JACEGUAVA, , , São Paulo - Capital, 04870 020"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21848",
+                                                    "name": "GUARAPIRANGA GOLFE & COUNTRY CLUBE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.652234721915,
+                                                            -23.5940572438123
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04022 002",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R IPE, 103, , São Paulo - Capital, 04022 002"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21849",
+                                                    "name": "IP CLUBE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.7352250210444,
+                                                            -23.4678177765957
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "02939 000",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "AV DR FELIPE PINEL, 2008, , São Paulo - Capital, 02939 000"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184a",
+                                                    "name": "JARAGU CLUBE CAMPESTRE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6423235187246,
+                                                            -23.4798545975226
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "02452 002",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R MARIA BANDINI SAVOY, 172, , São Paulo - Capital, 02452 002"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184b",
+                                                    "name": "LAUZANE PAULISTA FUTEBOL CLUBE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.5832171184941,
+                                                            -23.5489248956598
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "03178 210",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R PASSAROLA, 85, , São Paulo - Capital, 03178 210"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184c",
+                                                    "name": "LEO DO NORTE FUTEBOL CLUBE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6856763246905,
+                                                            -23.5175899961496
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "05037 090",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R COMEN SOUSA, 348, , São Paulo - Capital, 05037 090"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184d",
+                                                    "name": "NACIONAL ATLICO CLUBE"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6670346569446,
+                                                            -23.550402540351
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "01247 090",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R ANGATUBA, 703, , São Paulo - Capital, 01247 090"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184e",
+                                                    "name": "NACIONAL CLUB"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6703625027484,
+                                                            -23.57353589998
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "01436 000",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R CANADA, 658, , São Paulo - Capital, 01436 000"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2184f",
+                                                    "name": "S. HARMONIA DE TNIS"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6870060984357,
+                                                            -23.604641381052
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04569 010",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R QUINTANA, 206, , São Paulo - Capital, 04569 010"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21850",
+                                                    "name": "S. HPICA PAULISTANA"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.7041370378406,
+                                                            -23.6613281062
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04745 050",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "PC DOM FRANCISCO DE SOUSA, 540, , São Paulo - Capital, 04745 050"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21851",
+                                                    "name": "SO PAULO GOLF CLUB"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.7180777242214,
+                                                            -23.6779234545496
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04770 060",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R FRANCISCO DE SEIXAS, 225, , São Paulo - Capital, 04770 060"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21852",
+                                                    "name": "SO PAULO YACHT CLUB"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6400303446993,
+                                                            -23.5442509195299
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "0",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R VINTE DE E QUATRO MAIO R D JOSE DE BARROS, , , São Paulo - Capital,"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21853",
+                                                    "name": "SESC 24 DE MAIO"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.5840228343845,
+                                                            -23.5447927544771
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "0",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "AV ALVARO RAMOS, 991, , São Paulo - Capital,"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21854",
+                                                    "name": "SESC BELENZINHO"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6299133468349,
+                                                            -23.5516062612062
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "01019 020",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R DO CARMO, 147, , São Paulo - Capital, 01019 020"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21855",
+                                                    "name": "SESC CARMO"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6501768544664,
+                                                            -23.5460689390806
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "01222 020",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R DR VILA NOVA, 245, , São Paulo - Capital, 01222 020"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21856",
+                                                    "name": "SESC CONSOLAO"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6759187693031,
+                                                            -23.7275247291661
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04821 270",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "AV MANUEL ALVES SOARES, 1100, , São Paulo - Capital, 04821 270"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21857",
+                                                    "name": "SESC INTERLAGOS"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6079134424348,
+                                                            -23.5839962913246
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04203 000",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R BOM PASTOR, 822, , São Paulo - Capital, 04203 000"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21858",
+                                                    "name": "SESC IPIRANGA"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.4707795710066,
+                                                            -23.5817255280697
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "08265 045",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "AV FERNANDO DO E S A DE MATTOS, , , São Paulo - Capital, 08265 045"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc21859",
+                                                    "name": "SESC ITAQUERA"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6456244076061,
+                                                            -23.5744756824021
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "04005 001",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R ABILIO SOARES, 404, , São Paulo - Capital, 04005 001"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2185a",
+                                                    "name": "SESC PARAISO"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6281454500433,
+                                                            -23.5432467242197
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "03007-030",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "Praa So Vito s/n, , Centro, São Paulo - Capital, 03007-030"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2185b",
+                                                    "name": "Sesc Parque Dom Pedro II"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6455711468337,
+                                                            -23.5706192515854
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "01311 903",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "AV PAULISTA, 119, , São Paulo - Capital, 01311 903"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2185c",
+                                                    "name": "SESC PAULISTA"
+                                                },
+                                                {
+                                                    "geographic_position": {
+                                                        "type": "Point",
+                                                        "coordinates": [
+                                                            -46.6833975825905,
+                                                            -23.5257214927379
+                                                        ]
+                                                    },
+                                                    "address": {
+                                                        "cep": "05042 000",
+                                                        "country": "Brasil",
+                                                        "city": "São paulo",
+                                                        "street": "R CLELIA, 93, , São Paulo - Capital, 05042 000"
+                                                    },
+                                                    "services": [
+                                                        {
+                                                            "_id": "61a7d278d8840698915e19f0",
+                                                            "name": "Campo de Futebol"
+                                                        }
+                                                    ],
+                                                    "serviceTypes": [
+                                                        {
+                                                            "_id": "61a791559f10a452786d0b01",
+                                                            "name": "Cultura, esporte e lazer"
+                                                        }
+                                                    ],
+                                                    "imagesUrl": [
+                                                    ],
+                                                    "_id": "61aa5507eba35d668bc2185d",
+                                                    "name": "SESC POMPIA"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Success"
+                    }
+                },
+                "summary": "Retorna um array com os equipamentos",
+                "description": ""
+            },
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Locations' name",
+                                        "type": "string"
+                                    },
+                                    "contact_info": {
+                                        "description": "Contact Info",
+                                        "type": "object",
+                                        "properties": {
+                                            "scheduleWebSite": {
+                                                "description": "Locations' ScheduleWebSite",
+                                                "type": "string"
+                                            },
+                                            "website": {
+                                                "description": "Locations' ScheduleWebSite",
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "address": {
+                                        "description": "Address Info.",
+                                        "type": "object",
+                                        "properties": {
+                                            "street": {
+                                                "description": "Locations' street",
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "description": "Locations' number",
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "description": "Locations' number",
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "description": "Locations' number",
+                                                "type": "string"
+                                            },
+                                            "cep": {
+                                                "description": "Locations' number",
+                                                "type": "string"
+                                            },
+                                            "number": {
+                                                "description": "Locations' number",
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "Cadastrar nova localidade": {
+                                    "value": "{\n    \"name\": \"CDC Capão Redondo\",\n    \"contact_info\": {\n        \"scheduleWebSite\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"website\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"phone\": \"2231-4705\"\n    },\n    \"address\": {\n        \"street\": \"Metro Capão Redondo\",\n        \"number\": 3732,\n        \"city\": \"SP\",\n        \"country\": \"BR\",\n        \"description\": \"\",\n        \"cep\": \"3714-3196\"\n    },\n    \"description\": \"\",\n    \"imagesUrl\": [\n        {\n            \"url\": \"https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"01\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=680&q=80\",\n            \"descricao\": \"02\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1423068657086-889315a2eba8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"03\"\n        }\n    ],\n    \"workingTime\": \"das 08:00 às 17:00 \",\n    \"services\": [\n        {\n            \"_id\": \"61a7d278d8840698915e19e9\",\n            \"name\": \"Centro Esportivo/Centro de Esporte e Lazer - CE/CEL\"\n        }\n    ],\n    \"serviceTypes\": [\n        {\n            \"_id\": \"61a791559f10a452786d0b01\",\n            \"name\": \"Cultura, esporte e lazer\"\n        }\n    ],\n}"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Locations"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "summary": "Cria uma nova Localidade",
+                "description": "Return all locations"
+            }
+        },
+        "/locations/deleteOne/{id}": {
+            "delete": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "id do equipamento",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "deprecated": true,
+                "summary": "Deletes a  Location",
+                "description": "Updates a new Location"
+            }
+        },
+        "/locations/{id}": {
+            "summary": "Operações com equipamentos em específico",
+            "description": "Retorna uma única localidade",
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "Id do equipamento",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "Equipamento": {
+                                        "value": "    \"name\": \"CDC Capão Redondo\",\n    \"contact_info\": {\n        \"scheduleWebSite\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"website\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"phone\": \"2231-4705\"\n    },\n    \"address\": {\n        \"street\": \"Metro Capão Redondo\",\n        \"number\": 3732,\n        \"city\": \"SP\",\n        \"country\": \"BR\",\n        \"description\": \"\",\n        \"cep\": \"3714-3196\"\n    },\n    \"description\": \"\",\n    \"imagesUrl\": [\n        {\n            \"url\": \"https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"01\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=680&q=80\",\n            \"descricao\": \"02\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1423068657086-889315a2eba8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"03\"\n        }\n    ],\n    \"workingTime\": \"das 08:00 às 17:00 \",\n    \"services\": [\n        {\n            \"_id\": \"61a7d278d8840698915e19e9\",\n            \"name\": \"Centro Esportivo/Centro de Esporte e Lazer - CE/CEL\"\n        }\n    ],\n    \"serviceTypes\": [\n        {\n            \"_id\": \"61a791559f10a452786d0b01\",\n            \"name\": \"Cultura, esporte e lazer\"\n        }\n    ],\n}"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Retorna um equipamento em específico"
+                    }
+                },
+                "summary": "Retorna um equipamento"
+            },
+            "delete": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Retorna a confirmação de deleção do equipamento"
+                    }
+                },
+                "summary": "Deleta um equipamento"
+            },
+            "patch": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {
+                                    "Update": {
+                                        "value": "{\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61aa5507eba35d668bc21881\",\n            \"geographic_position\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -46.7865346331261,\n                    -23.6926263221543\n                ]\n            },\n            \"services\": [\n                {\n                    \"_id\": \"61a7d278d8840698915e19f3\",\n                    \"name\": \"Jogos da Cidade\"\n                }\n            ],\n            \"serviceTypes\": [\n                \"61a791559f10a452786d0b01\"\n            ],\n            \"imagesUrl\": [],\n            \"name\": \"CDC ANA GONALVES DE SOUZA\",\n            \"address\": {\n                \"cep\": \"5877230\",\n                \"country\": \"Brasil\",\n                \"city\": \"São paulo\",\n                \"street\": \"AV GUARUJA, 311, Jardim Guaruj, São Paulo - Capital, 5877230\"\n            },\n            \"__v\": 0,\n            \"distance\": 0.432442102351931\n        }"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "ok"
+                    }
+                },
+                "summary": "Atualiza uma localidade"
+            }
+        },
+        "/locations/updateOne/{id}": {
+            "patch": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "Id da localidade",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "deprecated": true,
+                "operationId": "id",
+                "summary": "Updates a new Location",
+                "description": "Updates a new Location"
+            }
+        },
+        "/services": {
+            "summary": "Retorna todas as atividades/tipos de equipamento/eventos",
+            "description": "Retorna todas as atividades/tipos de equipamento/eventos",
+            "get": {
+                "tags": [
+                    "Services"
+                ],
+                "parameters": [
+                    {
+                        "name": "quantity",
+                        "description": "limita os retornos",
+                        "schema": {
+
+                        },
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Success"
+                    }
+                },
+                "summary": "Lista todas as atividades",
+                "description": "You can list all available service"
+            },
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "service' name",
+                                        "type": "string"
+                                    },
+                                    "contact_info": {
+                                        "description": "Contact Info",
+                                        "type": "object",
+                                        "properties": {
+                                            "scheduleWebSite": {
+                                                "description": "service' ScheduleWebSite",
+                                                "type": "string"
+                                            },
+                                            "website": {
+                                                "description": "service' ScheduleWebSite",
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "address": {
+                                        "description": "Address Info.",
+                                        "type": "object",
+                                        "properties": {
+                                            "street": {
+                                                "description": "service' street",
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "cep": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "number": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "Novo serviço": {
+                                    "value": {
+                                        "name": "EXAMPLE - EXCLUDE RIGHT AFTER",
+                                        "active": true,
+                                        "description": "Carteira de trabalho para o empregado",
+                                        "isOnline": true,
+                                        "serviceType": "617998bc0f51bd4ff3015515"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "summary": "Creates a new Location",
+                "description": "Cria um novo serviço"
+            }
+        },
+        "/servicess/updateOne/{id}": {
+            "patch": {
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "deprecated": true,
+                "summary": "Creates a new Location",
+                "description": "Updates a new Location"
+            }
+        },
+        "/services/deleteOne/{id}": {
+            "delete": {
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "deprecated": true,
+                "summary": "Deletes a  Location",
+                "description": "Updates a new Location"
+            }
+        },
+        "/services/{id}": {
+            "get": {
+                "tags": [
+                    "Services"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "Id do serviço",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "Serviç": {
+                                        "value": " \n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61a7d278d8840698915e19f9\",\n            \"active\": true,\n            \"isOnline\": false,\n            \"name\": \" Capoeira\",\n            \"serviceType\": {\n                \"_id\": \"61a791559f10a452786d0b01\",\n                \"name\": \"Cultura, esporte e lazer\",\n                \"active\": true,\n                \"description\": \"\\\"n/a\\\"\",\n                \"icon\": \"sports\",\n                \"__v\": 0\n            },\n            \"description\": \"Numero de Clubes da Caomunidade com Ginásios\"\n        }\n    ]"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Retorna o serviço"
+                    }
+                },
+                "summary": "Retorna um único serviço"
+            }
+        },
+        "/serviceType/": {
+            "summary": "Cria um tipo de serviço/atividade",
+            "description": "Exemplo:\n\nA atividade é futebol, o tipo é: Jogos em grupo\n",
+            "get": {
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/ServiceType-All"
+                    }
+                },
+                "summary": "Retorna todos os tipos de serviço"
+            },
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "Novo tipo de serviço": {
+                                    "value": {
+                                        "name": "Inovação e Tecnologia",
+                                        "active": true,
+                                        "icon": "car"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Retorna ok"
+                    }
+                },
+                "summary": "Cria um novo tipo de serviço"
+            }
+        },
+        "/users/signup": {
+            "summary": "Cria um novo usuário",
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "Novo usuário": {
+                                    "value": {
+                                        "name": "teste02",
+                                        "password": "123456",
+                                        "contact_info": {
+                                            "email": "teste02@example.com"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Users"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Retorna a criação de um novo user"
+                    }
+                },
+                "description": "{\n    \"name\": \"teste02\",\n    \n    \n    \"password\": \"123456\",\n    \"contact_info\": {\n        \"email\": \"teste02@example.com\"\n    }\n}"
+            }
+        },
+        "/users/authenticate": {
+            "description": "Authentica um usuário com usuário e senha ou Oauth",
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "Atenticação": {
+                                    "value": {
+                                        "password": "123456",
+                                        "contact_info": {
+                                            "email": "teste02@example.com"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Users"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Autenticado"
+                    }
+                },
+                "summary": "Autentica um usuário com credenciais"
+            }
+        },
+        "/services/getAll": {
+            "summary": "Retorna todas as atividades/tipos de equipamento/eventos",
+            "description": "Retorna todas as atividades/tipos de equipamento/eventos",
+            "get": {
+                "tags": [
+                    "Services"
+                ],
+                "parameters": [
+                    {
+                        "name": "quantity",
+                        "description": "limita os retornos",
+                        "schema": {
+
+                        },
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Success"
+                    }
+                },
+                "deprecated": true,
+                "summary": "Lista todas as atividades",
+                "description": "You can list all available service"
+            },
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "service' name",
+                                        "type": "string"
+                                    },
+                                    "contact_info": {
+                                        "description": "Contact Info",
+                                        "type": "object",
+                                        "properties": {
+                                            "scheduleWebSite": {
+                                                "description": "service' ScheduleWebSite",
+                                                "type": "string"
+                                            },
+                                            "website": {
+                                                "description": "service' ScheduleWebSite",
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "address": {
+                                        "description": "Address Info.",
+                                        "type": "object",
+                                        "properties": {
+                                            "street": {
+                                                "description": "service' street",
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "cep": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            },
+                                            "number": {
+                                                "description": "service' number",
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "Novo serviço": {
+                                    "value": {
+                                        "name": "EXAMPLE - EXCLUDE RIGHT AFTER",
+                                        "active": true,
+                                        "description": "Carteira de trabalho para o empregado",
+                                        "isOnline": true,
+                                        "serviceType": "617998bc0f51bd4ff3015515"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Services"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "deprecated": true,
+                "summary": "Creates a new Location",
+                "description": "Cria um novo serviço"
+            }
+        },
+        "/location/locationType/{msKey}": {
+            "post": {
+                "requestBody": {
+                    "description": "{\n    \"name\": \"XXXXXXXXX\",\n    \"active\": true\n}",
+                    "required": true
+                },
+                "tags": [
+                    "Locations"
+                ],
+                "responses": {
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "Response - Created": {
+                                        "value": {
+                                            "status": "success",
+                                            "data": {
+                                                "_id": "61ce00802cdb7a3554670282",
+                                                "name": "XXXXXXXXX",
+                                                "active": true,
+                                                "__v": 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Created"
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "msKey",
+                    "schema": {
+                        "type": "string"
+                    },
+                    "in": "path",
+                    "required": true
+                }
+            ]
+        },
+        "/location/locationType": {
+            "summary": "Get All Location Types",
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "summary": "Retorna todas as localidades]"
+            }
+        },
+        "/locations/coordinates/{coordinates}/": {
+            "summary": "Operações com equipamentos em específico",
+            "description": "Retorna as colocalidades por ordem de distência, com base em coordenadas geográficas fornecidas",
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "Id do equipamento",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "Equipamento": {
+                                        "value": "    \"name\": \"CDC Capão Redondo\",\n    \"contact_info\": {\n        \"scheduleWebSite\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"website\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"phone\": \"2231-4705\"\n    },\n    \"address\": {\n        \"street\": \"Metro Capão Redondo\",\n        \"number\": 3732,\n        \"city\": \"SP\",\n        \"country\": \"BR\",\n        \"description\": \"\",\n        \"cep\": \"3714-3196\"\n    },\n    \"description\": \"\",\n    \"imagesUrl\": [\n        {\n            \"url\": \"https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"01\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=680&q=80\",\n            \"descricao\": \"02\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1423068657086-889315a2eba8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"03\"\n        }\n    ],\n    \"workingTime\": \"das 08:00 às 17:00 \",\n    \"services\": [\n        {\n            \"_id\": \"61a7d278d8840698915e19e9\",\n            \"name\": \"Centro Esportivo/Centro de Esporte e Lazer - CE/CEL\"\n        }\n    ],\n    \"serviceTypes\": [\n        {\n            \"_id\": \"61a791559f10a452786d0b01\",\n            \"name\": \"Cultura, esporte e lazer\"\n        }\n    ],\n}"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Retorna um equipamento em específico"
+                    }
+                },
+                "summary": "Retorna um equipamento"
+            },
+            "delete": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Retorna a confirmação de deleção do equipamento"
+                    }
+                },
+                "summary": "Deleta um equipamento"
+            },
+            "patch": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {
+                                    "Update": {
+                                        "value": "{\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61aa5507eba35d668bc21881\",\n            \"geographic_position\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -46.7865346331261,\n                    -23.6926263221543\n                ]\n            },\n            \"services\": [\n                {\n                    \"_id\": \"61a7d278d8840698915e19f3\",\n                    \"name\": \"Jogos da Cidade\"\n                }\n            ],\n            \"serviceTypes\": [\n                \"61a791559f10a452786d0b01\"\n            ],\n            \"imagesUrl\": [],\n            \"name\": \"CDC ANA GONALVES DE SOUZA\",\n            \"address\": {\n                \"cep\": \"5877230\",\n                \"country\": \"Brasil\",\n                \"city\": \"São paulo\",\n                \"street\": \"AV GUARUJA, 311, Jardim Guaruj, São Paulo - Capital, 5877230\"\n            },\n            \"__v\": 0,\n            \"distance\": 0.432442102351931\n        }"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "ok"
+                    }
+                },
+                "summary": "Atualiza uma localidade"
+            }
+        },
+        "/locations/coordinates/{coordinates}/service/{service}": {
+            "summary": "Operações com equipamentos em específico",
+            "description": "Retorna as colocalidades por ordem de distência, com base em coordenadas geográficas fornecidas e um serviço fornecido",
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "description": "Id do equipamento",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "Equipamento": {
+                                        "value": "    \"name\": \"CDC Capão Redondo\",\n    \"contact_info\": {\n        \"scheduleWebSite\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"website\": \"https://www.prefeitura.sp.gov.br/cidade/secretarias/esportes/clube_escola/index.php?p=44154\",\n        \"phone\": \"2231-4705\"\n    },\n    \"address\": {\n        \"street\": \"Metro Capão Redondo\",\n        \"number\": 3732,\n        \"city\": \"SP\",\n        \"country\": \"BR\",\n        \"description\": \"\",\n        \"cep\": \"3714-3196\"\n    },\n    \"description\": \"\",\n    \"imagesUrl\": [\n        {\n            \"url\": \"https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"01\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=680&q=80\",\n            \"descricao\": \"02\"\n        },\n        {\n            \"url\": \"https://images.unsplash.com/photo-1423068657086-889315a2eba8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80\",\n            \"descricao\": \"03\"\n        }\n    ],\n    \"workingTime\": \"das 08:00 às 17:00 \",\n    \"services\": [\n        {\n            \"_id\": \"61a7d278d8840698915e19e9\",\n            \"name\": \"Centro Esportivo/Centro de Esporte e Lazer - CE/CEL\"\n        }\n    ],\n    \"serviceTypes\": [\n        {\n            \"_id\": \"61a791559f10a452786d0b01\",\n            \"name\": \"Cultura, esporte e lazer\"\n        }\n    ],\n}"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Retorna um equipamento em específico"
+                    }
+                },
+                "summary": "Retorna um equipamento"
+            },
+            "delete": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Retorna a confirmação de deleção do equipamento"
+                    }
+                },
+                "summary": "Deleta um equipamento"
+            },
+            "patch": {
+                "tags": [
+                    "Locations"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {
+                                    "Update": {
+                                        "value": "{\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61aa5507eba35d668bc21881\",\n            \"geographic_position\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -46.7865346331261,\n                    -23.6926263221543\n                ]\n            },\n            \"services\": [\n                {\n                    \"_id\": \"61a7d278d8840698915e19f3\",\n                    \"name\": \"Jogos da Cidade\"\n                }\n            ],\n            \"serviceTypes\": [\n                \"61a791559f10a452786d0b01\"\n            ],\n            \"imagesUrl\": [],\n            \"name\": \"CDC ANA GONALVES DE SOUZA\",\n            \"address\": {\n                \"cep\": \"5877230\",\n                \"country\": \"Brasil\",\n                \"city\": \"São paulo\",\n                \"street\": \"AV GUARUJA, 311, Jardim Guaruj, São Paulo - Capital, 5877230\"\n            },\n            \"__v\": 0,\n            \"distance\": 0.432442102351931\n        }"
+                                    }
+                                }
+                            }
+                        },
+                        "description": "ok"
+                    }
+                },
+                "summary": "Atualiza uma localidade"
+            }
+        }
+    },
+    "components": {
+        "responses": {
+            "unicaLocalidade": {
+                "description": "{\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61aa5507eba35d668bc21881\",\n            \"geographic_position\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -46.7865346331261,\n                    -23.6926263221543\n                ]\n            },\n            \"services\": [\n                {\n                    \"_id\": \"61a7d278d8840698915e19f3\",\n                    \"name\": \"Jogos da Cidade\"\n                }\n            ],\n            \"serviceTypes\": [\n                \"61a791559f10a452786d0b01\"\n            ],\n            \"imagesUrl\": [],\n            \"name\": \"CDC ANA GONALVES DE SOUZA\",\n            \"address\": {\n                \"cep\": \"5877230\",\n                \"country\": \"Brasil\",\n                \"city\": \"São paulo\",\n                \"street\": \"AV GUARUJA, 311, Jardim Guaruj, São Paulo - Capital, 5877230\"\n            },\n            \"__v\": 0,\n            \"distance\": 0.432442102351931\n        }\n}"
+            },
+            "ServiceType-All": {
+                "description": "{\n    \"quantity\": 17,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"61a791559f10a452786d0b03\",\n            \"name\": \"Autódromo\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"directions-car\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b09\",\n            \"name\": \"Campos de Malha e/ou Bocha\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0aff\",\n            \"name\": \"Centro Esportivo/Balneário\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0afd\",\n            \"name\": \"Centro Esportivo/Centro Educacional e Esportivo - CE/CEE\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0afe\",\n            \"name\": \"Centro Esportivo/Centro de Esporte e Lazer - CE/CEL\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b00\",\n            \"name\": \"Centro Esportivo/Mini-Balneário\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b02\",\n            \"name\": \"Centro Olímpico e NAR\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b05\",\n            \"name\": \"Clube Desportivo\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b04\",\n            \"name\": \"Clube Desportivo com Estádio\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"attach-money\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b07\",\n            \"name\": \"Clube da Comunidade - CDC\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b08\",\n            \"name\": \"Clube da Comunidade com Campo de Futebol\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b0b\",\n            \"name\": \"Clube da Comunidade dos CEUs\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b01\",\n            \"name\": \"Cultura, esporte e lazer\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b06\",\n            \"name\": \"Evento\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"local-florist\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0afc\",\n            \"name\": \"Público - Estadual\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"people-alt\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0afb\",\n            \"name\": \"Público - Municipal\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"people-alt\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61a791559f10a452786d0b0f\",\n            \"name\": \"Urgência\",\n            \"active\": true,\n            \"description\": \"\\\"n/a\\\"\",\n            \"icon\": \"sports\",\n            \"__v\": 0\n        }\n    ]\n}"
+            }
+        }
+    }
+}

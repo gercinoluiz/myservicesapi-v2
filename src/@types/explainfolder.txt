@@ -1,0 +1,1 @@
+I created this folder and the file inside to declare everything I did not got the @types/module

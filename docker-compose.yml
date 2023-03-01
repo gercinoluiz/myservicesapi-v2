@@ -1,0 +1,30 @@
+version: '2'
+services:
+  mongo_production:
+    image: mongo:4.4.6
+    restart: on-failure:5
+    container_name: prodDb
+    ports:
+      - '27017:27017'
+
+  mongo_dev:
+    image: mongo:4.4.6
+    restart: on-failure:5
+    container_name: devDb
+    ports:
+      - '27018:27017'
+
+  mongo_testing:
+    image: mongo:4.4.6
+    restart: on-failure:5
+    container_name: testDb
+    ports:
+      - '27019:27017'
+  # api:
+  #   container_name: api
+  #   image: node
+  #   volumes:
+  #     - '.:/usr/meu-servico'
+  #   ports:
+  #     - '3333:3333'
+  #   command: npm run dev:server
