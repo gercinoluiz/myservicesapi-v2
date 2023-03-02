@@ -15,7 +15,7 @@ export default class UserController {
      ): Promise<Response> {
           const data = request.body
 
-          console.log({data})
+          
 
           let user
 

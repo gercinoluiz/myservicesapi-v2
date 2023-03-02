@@ -80,6 +80,15 @@ export default class LocationRepository implements ILocationRepository {
                               distanceMultiplier: 1.26 / 1000,
                          },
                     },
+
+                    {
+                         $lookup: {
+                           from: 'services',
+                           localField: 'services',
+                           foreignField: '_id',
+                           as: 'services'
+                         }
+                       }
                ]).limit(100)
 
                //Techinique bellow is awesome
@@ -95,7 +104,7 @@ export default class LocationRepository implements ILocationRepository {
                     }
                )
 
-               return newLocationWithPopulate
+               return locations
           } catch (error) {
                console.log('########getLocationsWithCoordinates#####', {
                     error,
@@ -113,6 +122,8 @@ export default class LocationRepository implements ILocationRepository {
                serviceId
           )
 
+          console.log({serviceIdAsMongooseObjectType})
+
           const locations = await LocationModule.aggregate([
                {
                     $geoNear: {
@@ -122,21 +133,36 @@ export default class LocationRepository implements ILocationRepository {
                          },
                          distanceField: 'distance',
                          distanceMultiplier: 1.26 / 1000,
-                         query: { "services.service": serviceIdAsMongooseObjectType },
+                         query: { "services": serviceIdAsMongooseObjectType },
                     },
                },
+
+               {
+                    $lookup: {
+                      from: 'services',
+                      localField: 'services',
+                      foreignField: '_id',
+                      as: 'services'
+                    }
+                  }
           ]).limit(100)
+
+        
+
+
 
           const newLocationWithPopulate = await LocationModule.populate(
                locations,
                {
                     path: 'services',
                     populate: {
-                         path: 'service',
+                         path: 'services',
                          model: 'Service',
+                         select: 'name' // specify the field you want to populate
                     },
                }
           )
+         
 
           return newLocationWithPopulate
      }
