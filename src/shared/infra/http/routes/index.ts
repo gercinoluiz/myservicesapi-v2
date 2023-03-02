@@ -6,7 +6,7 @@ import servicesTypeRouter from '@modules/services-module/infra/http/routes/servi
 import locationTypeRouter from '@modules/locations/infra/http/routes/locationtype.routes'
 import userRouter from '@modules/users/infra/http/routes/users.routes'
 
-import devRouter from '@shared/dev-data/importers/dev.routes'
+// import devRouter from '@shared/dev-data/importers/dev.routes'
 
 const routes = Router()
 
@@ -18,6 +18,6 @@ routes.use('/feedbackmessages', feedBackMessagesRouter)
 routes.use('/users', userRouter)
 
 //## DEV
-routes.use('/dev', devRouter)
+// routes.use('/dev', devRouter)
 
 export default routes
